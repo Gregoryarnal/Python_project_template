@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "install requirements",
+        "type": "shell",
+        "command": "source venv/bin/activate ; pip install -r requirements.txt",
+        "problemMatcher": []
+      },
+      {
+        "label": "Create env deps",
+        "type": "shell",
+        "command": "virtualenv -p python3 venv ; source venv/bin/activate",
+        "problemMatcher": []
+      } 
+    ]
+  }
